@@ -1,5 +1,5 @@
 # antonelmvik.com
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c7698e96-af09-4513-ba2e-e33f46cfea71/deploy-status)](https://app.netlify.com/sites/antonelmvik/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eafe8c95-228f-473b-b16a-dfd694b86375/deploy-status)](https://app.netlify.com/sites/antonelmvik/deploys)
 
 ## tl;dr
 
