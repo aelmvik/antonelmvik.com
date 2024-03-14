@@ -1,0 +1,90 @@
+:root {
+  --text-color: black;
+  --background-color: white;
+  --link-color: royalblue;
+  --link-hover-color: white;
+  --link-hover-background: royalblue;
+  --dark-mode-bg: #121212;
+  --dark-mode-text: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+body.dark-mode {
+  background-color: var(--dark-mode-bg);
+  color: var(--dark-mode-text);
+}
+
+main {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p, ul {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+p:last-child, ul:last-child {
+  margin-bottom: 25px;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--link-hover-color);
+  background-color: var(--link-hover-background);
+}
+
+hr {
+  border: 0.5px solid #333;
+  margin: 20px 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.content {
+  margin-top: 20px;
+}
