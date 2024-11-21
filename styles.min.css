@@ -1,90 +1,249 @@
 :root {
-  --text-color: black;
-  --background-color: white;
-  --link-color: royalblue;
-  --link-hover-color: white;
-  --link-hover-background: royalblue;
-  --dark-mode-bg: #121212;
-  --dark-mode-text: #ffffff;
+  /* Light mode colors */
+  --color-primary: #4169e1;
+  --color-background: #ffffff;
+  --color-text: #1a1a1a;
+  --color-border: #e0e0e0;
+  --color-hover: #3a5cd0;
+  
+  /* Dark mode colors */
+  --color-background-dark: #1a1a1a;
+  --color-text-dark: #f0f0f0;
+  --color-primary-dark: #7b9aff;
+  --color-border-dark: #333333;
+  --color-hover-dark: #8ba4ff;
+  
+  /* Spacing */
+  --spacing-xs: 10px;
+  --spacing-sm: 20px;
+  --spacing-md: 25px;
+  --spacing-lg: 50px;
+  
+  /* Other */
+  --border-radius: 50%;
+  --container-width: 500px;
 }
 
-* {
-  padding: 0;
-  margin: 0;
+/* Reset */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* Base styles */
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+  transition: background-color 0.15s ease-out, color 0.15s ease-out;
 }
 
+/* Theme switch styles */
+.theme-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-background);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  will-change: transform;
+}
+
+.theme-switch:hover {
+  transform: scale(1.1);
+}
+
+.theme-switch svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-text);
+  transition: all 0.15s ease;
+}
+
+.theme-switch .sun {
+  display: none;
+}
+
+.theme-switch .moon {
+  display: block;
+}
+
+/* Dark mode styles */
 body.dark-mode {
-  background-color: var(--dark-mode-bg);
-  color: var(--dark-mode-text);
+  --color-background: var(--color-background-dark);
+  --color-text: var(--color-text-dark);
+  --color-primary: var(--color-primary-dark);
+  --color-border: var(--color-border-dark);
+  --color-hover: var(--color-hover-dark);
 }
 
+body.dark-mode .theme-switch {
+  background: var(--color-background-dark);
+}
+
+body.dark-mode .theme-switch .sun {
+  display: block;
+}
+
+body.dark-mode .theme-switch .moon {
+  display: none;
+}
+
+/* Layout */
 main {
-  max-width: 500px;
-  margin: 50px auto;
-  padding: 0 20px;
+  max-width: var(--container-width);
+  margin: var(--spacing-lg) auto;
+  padding: 0 var(--spacing-sm);
 }
 
+/* Typography */
 h2 {
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-xs);
 }
 
 p, ul {
-  margin-bottom: 20px;
-  font-size: 15px;
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.9375rem;
 }
 
-p:last-child, ul:last-child {
-  margin-bottom: 25px;
-}
-
+/* Links */
 a {
   font-weight: 700;
+  color: var(--color-primary);
   text-decoration: none;
-  color: var(--link-color);
+  transition: all 0.1s ease;
+  padding: 2px 4px;
+  border-radius: 3px;
 }
 
-a:hover {
-  text-decoration: underline;
-  color: var(--link-hover-color);
-  background-color: var(--link-hover-background);
+a:hover,
+a:focus {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  outline: none;
 }
 
-hr {
-  border: 0.5px solid #333;
-  margin: 20px 0;
-}
-
+/* Lists */
 ul {
-  padding-left: 20px;
+  padding-left: var(--spacing-sm);
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-xs);
 }
 
-.profile {
+/* Profile */
+.profile-header {
   display: flex;
   align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: 20px;
 }
 
 .profile-pic {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .username {
   font-weight: bold;
 }
 
-.content {
-  margin-top: 20px;
+/* Optional: if you want to specifically target the bio section */
+.bio {
+  margin-top: 0;
+}
+
+/* Utilities */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+hr {
+  border: 0.5px solid var(--color-border);
+  margin: var(--spacing-sm) 0;
+}
+
+/* Add smooth transitions for all color changes */
+body * {
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.theses-list li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.thesis-info {
+  margin-top: 5px;
+  font-size: 0.875rem;
+  color: var(--color-text);
+  opacity: 0.8;
+}
+
+/* Add loading indicator for theme switch */
+.theme-switch[aria-busy="true"] {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+@media print {
+  .theme-switch {
+    display: none;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  a {
+    color: black !important;
+    text-decoration: underline;
+  }
+  
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+  }
+}
+
+/* Add content-visibility for better rendering performance */
+.projects, .bands {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
+/* Reduce paint operations */
+.profile-card {
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }

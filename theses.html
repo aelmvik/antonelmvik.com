@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Anton Elmvik</title>
-  <meta name="description" content="Theses by Anton Elmvik.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anton Elmvik | Theses</title>
+  <meta name="description" content="Academic theses by Anton Elmvik - Music production and musicology research.">
   <link rel="stylesheet" href="styles.min.css">
+  <link rel="preload" href="profile.jpg" as="image">
+  <link rel="icon" href="favicon.ico">
 </head>
 <body>
-  <main>
-    <article>
-      <section>
-        <div class="social-post">
-          <div class="profile">
-              <img src="profile.jpg" alt="Anton Elmvik playing guitar" class="profile-pic"/>
-              <span class="username">antonelmvik</span>
-          </div>
-        </div>
-      </section>
-      <hr/>
+  <button class="theme-switch" aria-label="Toggle dark mode">
+    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </button>
 
-      <section>
+  <header class="visually-hidden">
+    <h1>Anton Elmvik's Theses</h1>
+  </header>
+
+  <main>
+    <article class="profile-card">
+      <section class="profile-header">
+        <img src="profile.jpg" alt="Anton Elmvik playing guitar" width="40" height="40" class="profile-pic" loading="eager">
+        <span class="username">antonelmvik</span>
+      </section>
+
+      <section class="theses">
         <h2>Theses</h2>
-        <ul>
-          <li><a href="https://du.diva-portal.org/smash/get/diva2:1638086/FULLTEXT01.pdf" target="_blank">Blockkedjeteknologin i musikindustrin - En kvalitativ studie om användningen av blockkedjeteknologi i musikindustrin</a> (2021, Dalarna University, B.S. thesis)</li>
-          <li><a href="https://drive.google.com/file/d/19TkLqZV9bExwspK1p6STZS_Yl8iGQHmm/view?usp=sharing" target="_blank">Ungdomsshower i Pargas - Deltagande och motiverande faktorer</a> (2018, Åbo Akademi University, B.S. thesis)</li>
+        <ul class="theses-list">
+          <li>
+            <a href="https://du.diva-portal.org/smash/get/diva2:1638086/FULLTEXT01.pdf" target="_blank" aria-label="Bachelor's thesis on blockchain technology in music industry">
+              Blockkedjeteknologin i musikindustrin - En kvalitativ studie om användningen av blockkedjeteknologi i musikindustrin
+            </a>
+            <p class="thesis-info">(2021, Dalarna University, B.A. thesis in Music Production)</p>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/19TkLqZV9bExwspK1p6STZS_Yl8iGQHmm/view?usp=sharing" target="_blank" aria-label="Bachelor's thesis on youth shows in Pargas">
+              Ungdomsshower i Pargas - Deltagande och motiverande faktorer
+            </a>
+            <p class="thesis-info">(2018, Åbo Akademi University, B.A. thesis in Musicology)</p>
+          </li>
         </ul>
       </section>
-      <hr/> 
 
-      <section>
-        <p><a href="index.html">← Back home</a></p>
+      <footer>
+        <p><a href="index.html" aria-label="Return to homepage">← Back home</a></p>
         <p>Thank you for stopping by. ❤️</p>
-      </section>
+      </footer>
     </article>
   </main>
-  <script src="scripts.min.js"></script>
+
+  <script src="scripts.min.js" defer></script>
 </body>
 </html>

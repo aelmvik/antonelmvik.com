@@ -3,75 +3,96 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Anton Elmvik</title>
-  <meta name="description" content="Website of Anton Elmvik, a musician and audio tech from Finland. Explore his projects, bands, and connect on social media.">
+  <title>Anton Elmvik | Musician & Audio Tech</title>
+  <meta name="description" content="Anton Elmvik - Finnish musician, audio technician, and producer. Explore projects, collaborations, and get in touch.">
   <link rel="stylesheet" href="styles.min.css">
+  <link rel="preload" href="profile.jpg" as="image">
+  <link rel="icon" href="favicon.ico">
+  <meta name="theme-color" content="#ffffff" id="theme-color">
+  <link rel="preconnect" href="https://instagram.com">
+  <link rel="preconnect" href="https://open.spotify.com">
+  <link rel="dns-prefetch" href="https://instagram.com">
+  <link rel="dns-prefetch" href="https://open.spotify.com">
 </head>
 <body>
+  <button class="theme-switch" aria-label="Toggle dark mode">
+    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </button>
+
+  <header class="visually-hidden">
+    <h1>Anton Elmvik</h1>
+  </header>
+
   <main>
-    <article>
-      <section>
-        <div class="social-post">
-          <div class="profile">
-              <img src="profile.jpg" alt="Anton Elmvik playing guitar" class="profile-pic"/>
-              <span class="username">antonelmvik</span>
-          </div>
-          <div class="content">
-            <p>Hey there, I'm Anton Elmvik - a musician and audio tech from Finland. I've spent my life plucking strings and creating sounds, as well as studying and working various jobs.</p>
-    
-            <p>In 2022, I graduated with a B.A in music production from Dalarna University, but I also hold degrees in musicology from Åbo Akademi University and information technology from Turku Vocational Institute. You can read both of my theses <a href="theses.html">here</a>.</p>
-    
-            <p>These days, I split my time between playing in various bands/projects and working at the <a href="https://pargas.fi/sv/framsida" target="_blank" aria-label="Culture Department of Pargas">Culture Department of Pargas</a>.</p>
-
-            <p>Connect with me on <a href="https://instagram.com/antonelmvik" target="_blank" aria-label="Anton on Instagram">Instagram</a>, and feel free to drop me an email at <a href="mailto:antonelmvik@gmail.com" aria-label="Email Anton">antonelmvik@gmail.com</a>.</p>
-          </div>
-        </div>
+    <article class="profile-card">
+      <section class="profile-header">
+        <img src="profile.jpg" alt="Anton Elmvik playing guitar" width="40" height="40" class="profile-pic" loading="eager">
+        <span class="username">antonelmvik</span>
       </section>
-      <hr/>
 
-      <section>
-        <h2>A few <i>select</i> projects of mine</h2>
-        <ul>
-          <li><a href="https://www.pargasbeatlesfest.com/" target="_blank">Pargas Beatles Fest</a> (2024, visuals, web & social media)</li>
-          <li><a href="https://open.spotify.com/track/1eP68aM8DAHUw5FipUqDTP?si=b86bf6a0a2ae45aa" target="_blank">Syns i Centris</a> (2024, rec. eng., bass & visuals)</li>
-          <li><a href="https://youtu.be/HveEcPePyeg?si=xtSUrwZtRNn0YBFW" target="_blank">Now and Then</a> (2024, video ed. & bass)</li>
-          <li><a href="https://open.spotify.com/album/0r07Vv64c7NOqdDYMLff7P?si=CCEvCsHLQOSUmQphVpHwTA" target="_blank">GlemStation 5</a> (2023, co-producer)</li>
-          <li><a href="https://open.spotify.com/track/1tz6K6Jz5AFTKDo0SYFUpH?si=1af48d116f0a4797" target="_blank">Finn fem fel</a> (2023, bass)</li>
-          <li><a href="https://open.spotify.com/album/44rXuaqU3JSgFxcFteHTv3?si=Eob1vShaQbSudIDxmi6-lg" target="_blank">Skärihelg</a> (2023, rec. eng. & bass)</li>
-          <li><a href="https://open.spotify.com/album/4q3nYFyzzpEelu7TkCp6Q0?si=U3DfxyTXTZ6xq_L7azodTw" target="_blank">Because</a> (2023, rec. eng. & bass)</li>
-          <li><a href="https://youtu.be/bfQLtFYPJT0" target="_blank">Making the iDubbbz Content Cop Theme</a> (2023, video ed.)</li>
-          <li><a href="https://open.spotify.com/album/5ew5SmxiSg12POlOcsOyhw?si=94fv1l4tSxqHRFP03kefxw" target="_blank">Marmalade Skies</a> (2022, rec. eng. & bass)</li>
-          <li><a href="https://open.spotify.com/album/3yycjNXUrRipdTQVeNkC8U?si=SBtAm9r8Qn-Koi_MBcOBBw" target="_blank">Hem igen & Allt du aldrig var</a> (2022, bass)</li>
-          <li><a href="https://open.spotify.com/album/59J634lDdWigeF9iX3alW8?si=gMdcmTxySca3YH5THyXtug" target="_blank">Champion 91</a> (2021, co-producer)</li>
-          <li><a href="https://youtu.be/_csQjnhPfPU" target="_blank">Polka Medley</a> (2021, bass)</li>
-          <li><a href="https://youtu.be/kh8VvWwssCE" target="_blank">Lady Madonna</a> (2021, video ed., prod. & bass)</li>
-          <li><a href="https://youtu.be/z_UFHhzXBvI" target="_blank">A Day In The Life</a> (2020, video ed., prod. & bass)</li>
-          <li><a href="https://youtu.be/gQK8TEce6sg" target="_blank">While My Guitar Gently Weeps</a> (2020, video ed., prod. & bass)</li>
-          <li><a href="https://open.spotify.com/album/5lOUYxb27zodYDsBK3cl4i?si=kNgnGi1TR32rVIIJdG69mA" target="_blank">Fruchtgetränk</a> (2021, co-producer)</li>
-          <li><a href="https://youtu.be/P3h90-Cu0B8" target="_blank">Martha My Dear</a> (2020, video ed., prod. & bass)</li>
-          <li><a href="https://open.spotify.com/album/141mijXzFAWRapuHmlg8jA?si=727TyMyQSQa-NFVDiKRwqQ" target="_blank">Grand Slam Aces</a> (2018, co-producer)</li>
-          <li><a href="https://open.spotify.com/album/2XhZKOX6C5A8oJZv4sHXrd?si=RQG8VBsbS-eiSbA01FUapA" target="_blank">Mixtape Vol. 1</a> (2017, co-producer)</li>
-          <!-- Additional projects listed here -->
+      <section class="bio">
+        <p>Hey there, I'm Anton Elmvik - a musician and audio tech from Finland. I've spent my life plucking strings and creating sounds, as well as studying and working various jobs.</p>
+    
+        <p>In 2022, I graduated with a B.A in music production from Dalarna University, but I also hold degrees in musicology from Åbo Akademi University and information technology from Turku Vocational Institute. You can read both of my theses <a href="theses.html">here</a>.</p>
+    
+        <p>These days, I split my time between playing in various bands/projects and working at the <a href="https://pargas.fi/sv/framsida" target="_blank" aria-label="Culture Department of Pargas">Culture Department of Pargas</a>.</p>
+
+        <p>Connect with me on <a href="https://instagram.com/antonelmvik" target="_blank" aria-label="Anton on Instagram">Instagram</a>, and feel free to drop me an email at <a href="mailto:antonelmvik@gmail.com" aria-label="Email Anton">antonelmvik@gmail.com</a>.</p>
+      </section>
+
+      <section class="projects">
+        <h2>A few selected projects</h2>
+        <ul class="project-list">
+          <li><a href="https://www.pargasbeatlesfest.com/" target="_blank" aria-label="Pargas Beatles Fest">Pargas Beatles Fest</a> (2024, visuals, web & social media)</li>
+          <li><a href="https://open.spotify.com/track/1eP68aM8DAHUw5FipUqDTP?si=b86bf6a0a2ae45aa" target="_blank" aria-label="Syns i Centris">Syns i Centris</a> (2024, rec. eng., bass & visuals)</li>
+          <li><a href="https://youtu.be/HveEcPePyeg?si=xtSUrwZtRNn0YBFW" target="_blank" aria-label="Now and Then">Now and Then</a> (2024, video ed. & bass)</li>
+          <li><a href="https://open.spotify.com/album/0r07Vv64c7NOqdDYMLff7P?si=CCEvCsHLQOSUmQphVpHwTA" target="_blank" aria-label="GlemStation 5">GlemStation 5</a> (2023, co-producer)</li>
+          <li><a href="https://open.spotify.com/track/1tz6K6Jz5AFTKDo0SYFUpH?si=1af48d116f0a4797" target="_blank" aria-label="Finn fem fel">Finn fem fel</a> (2023, bass)</li>
+          <li><a href="https://open.spotify.com/album/44rXuaqU3JSgFxcFteHTv3?si=Eob1vShaQbSudIDxmi6-lg" target="_blank" aria-label="Skärihelg">Skärihelg</a> (2023, rec. eng. & bass)</li>
+          <li><a href="https://open.spotify.com/album/4q3nYFyzzpEelu7TkCp6Q0?si=U3DfxyTXTZ6xq_L7azodTw" target="_blank" aria-label="Because">Because</a> (2023, rec. eng. & bass)</li>
+          <li><a href="https://youtu.be/bfQLtFYPJT0" target="_blank" aria-label="Making the iDubbbz Content Cop Theme">Making the iDubbbz Content Cop Theme</a> (2023, video ed.)</li>
+          <li><a href="https://open.spotify.com/album/5ew5SmxiSg12POlOcsOyhw?si=94fv1l4tSxqHRFP03kefxw" target="_blank" aria-label="Marmalade Skies">Marmalade Skies</a> (2022, rec. eng. & bass)</li>
+          <li><a href="https://open.spotify.com/album/3yycjNXUrRipdTQVeNkC8U?si=SBtAm9r8Qn-Koi_MBcOBBw" target="_blank" aria-label="Hem igen & Allt du aldrig var">Hem igen & Allt du aldrig var</a> (2022, bass)</li>
+          <li><a href="https://open.spotify.com/album/59J634lDdWigeF9iX3alW8?si=gMdcmTxySca3YH5THyXtug" target="_blank" aria-label="Champion 91">Champion 91</a> (2021, co-producer)</li>
+          <li><a href="https://youtu.be/_csQjnhPfPU" target="_blank" aria-label="Polka Medley">Polka Medley</a> (2021, bass)</li>
+          <li><a href="https://youtu.be/kh8VvWwssCE" target="_blank" aria-label="Lady Madonna">Lady Madonna</a> (2021, video ed., prod. & bass)</li>
+          <li><a href="https://youtu.be/z_UFHhzXBvI" target="_blank" aria-label="A Day In The Life">A Day In The Life</a> (2020, video ed., prod. & bass)</li>
+          <li><a href="https://youtu.be/gQK8TEce6sg" target="_blank" aria-label="While My Guitar Gently Weeps">While My Guitar Gently Weeps</a> (2020, video ed., prod. & bass)</li>
+          <li><a href="https://open.spotify.com/album/5lOUYxb27zodYDsBK3cl4i?si=kNgnGi1TR32rVIIJdG69mA" target="_blank" aria-label="Fruchtgetränk">Fruchtgetränk</a> (2021, co-producer)</li>
+          <li><a href="https://youtu.be/P3h90-Cu0B8" target="_blank" aria-label="Martha My Dear">Martha My Dear</a> (2020, video ed., prod. & bass)</li>
+          <li><a href="https://open.spotify.com/album/141mijXzFAWRapuHmlg8jA?si=727TyMyQSQa-NFVDiKRwqQ" target="_blank" aria-label="Grand Slam Aces">Grand Slam Aces</a> (2018, co-producer)</li>
+          <li><a href="https://open.spotify.com/album/2XhZKOX6C5A8oJZv4sHXrd?si=RQG8VBsbS-eiSbA01FUapA" target="_blank" aria-label="Mixtape Vol. 1">Mixtape Vol. 1</a> (2017, co-producer)</li>
         </ul>
       </section>
-      <hr/>
 
-      <section>
+      <section class="bands">
         <h2>Bands</h2>
-        <ul>
-          <li><a href="https://shesleaving.com" target="_blank">She’s Leaving Home</a></li>
-          <li><a href="https://www.facebook.com/unclebenspumpedupfrisco" target="_blank">Uncle Ben's Pumped Up Frisco</a></li>
-          <li><a href="https://open.spotify.com/artist/7q0wl2DKE7xHZpJyQO2wPV?si=VXmtBfzRTGyErdafENSc2A" target="_blank">Glem Aces</a></li>
-          <!-- Additional bands listed here -->
+        <ul class="band-list">
+          <li><a href="https://shesleaving.com" target="_blank" aria-label="She’s Leaving Home">She’s Leaving Home</a></li>
+          <li><a href="https://www.facebook.com/unclebenspumpedupfrisco" target="_blank" aria-label="Uncle Ben's Pumped Up Frisco">Uncle Ben's Pumped Up Frisco</a></li>
+          <li><a href="https://open.spotify.com/artist/7q0wl2DKE7xHZpJyQO2wPV?si=VXmtBfzRTGyErdafENSc2A" target="_blank" aria-label="Glem Aces">Glem Aces</a></li>
         </ul>
       </section>
-      <hr/>
 
-      <section>
+      <footer>
         <p>Thank you for stopping by. ❤️</p>
-      </section>
+      </footer>
     </article>
   </main>
-  <script src="scripts.min.js"></script>
+
+  <script src="scripts.min.js" defer></script>
 </body>
 </html>
